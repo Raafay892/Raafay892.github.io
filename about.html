@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link rel="" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #e1f3ff;
+        }
+
+        .banner {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #f9f9f9;
+            padding: 10px 20px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+            .navbar button {
+                font-size: 18px;
+                background-color: #f2f2f2;
+                border: none;
+                cursor: pointer;
+                padding: 12px 24px;
+                margin: 0 5px;
+                border-radius: 5px;
+                transition: background-color 0.3s, box-shadow 0.3s;
+            }
+
+                .navbar button:hover {
+                    background-color: #ddd;
+                    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+                }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        .col-6 {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            max-width: 50%;
+        }
+
+            .col-6 img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+                border-radius: 5px;
+            }
+
+            .col-6 h2,
+            .col-6 h4,
+            .col-6 h6,
+            .col-6 label {
+                margin: 10px 0;
+            }
+
+            .col-6 label {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+        .bold-heading {
+            font-weight: bold;
+        }
+
+        @media (max-width: 768px) {
+            .row {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="banner">
+        <div class="navbar">
+            <button class="navbar-brand" onclick="window.location.href='./home.html'">Home</button>
+            <button class="navbar-brand" onclick="window.location.href='./About.html'">About</button>
+            <button class="navbar-brand" onclick="window.location.href='./Services.html'">Services</button>
+            <button class="navbar-brand" onclick="window.location.href='./Contact.html'">Contact</button>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <img src="lays.jpg" height="450" width="400" alt="LAYS Chips">
+            </div>
+            <div class="col-6">
+                <h2>Psychologist Rabiya Sajid</h2>
+                <h4>CLINICAL PSYCHOLOGIST</h4>
+                <label>
+                    <h5>Professional Journey:</h5>
+                    After completing her undergraduate studies, Rabiya pursued her dream of becoming a Psychologist and embarked on a fulfilling career in this field. Over the years, she has worked with diverse clients, gaining valuable insights and expertise in addressing a wide range of psychological concerns.
+
+                    Currently, Rabiya is furthering her knowledge and skills by pursuing a Masters's degree in Career Counseling from Nust University. This specialized training equips her with the latest techniques and strategies to guide individuals in making informed career choices, exploring their potentials, and achieving their professional goals.
+
+                   
+                </label>
+                <label>
+                    <h5 class="bold-heading">Work at Imranz Clinic:</h5>
+                    Rabiya Sajid is an integral part of the esteemed Imranz Clinic, a renowned mental health facility known for its compassionate and effective psychological services. At the clinic, she offers individual therapy sessions, conducts psychological assessments, and provides valuable insights to clients seeking support for emotional and mental challenges.
+                </label>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
